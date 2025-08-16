@@ -74,16 +74,39 @@ ol {
   align-items: flex-start;
 }
 
+/* *search-form */
+
+.search-form__fieldset-title {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #fff;
+}
+
 /* ? contant-details-section */
 
 .content__details {
   flex-grow: 1;
-  width: 100%;
+  max-width: 399px;
   /* height: 100%; */
 }
 
 .title {
+  font-family: Oswald, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 75px;
+  line-height: 94%;
+  letter-spacing: 0;
+  text-transform: uppercase;
   margin-bottom: 26px;
+}
+
+.content__accent {
+  color: #545050;
 }
 
 .content__list-container {
@@ -100,6 +123,11 @@ ol {
   gap: 30px 0;
 }
 
+.content__card-link {
+  text-decoration: none;
+  color: #fff;
+}
+
 .content__video-card {
   display: flex;
   flex-flow: row nowrap;
@@ -108,6 +136,37 @@ ol {
 
 .content__video-card-description-container {
   flex-grow: 1;
+  flex-basis: 0;
+  overflow: hidden;
+}
+
+.content__video-card-title {
+  margin-bottom: 6px;
+  font-family: Oswald, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: #fff;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.content__video-card-description {
+  font-family: Fira Sans Condensed, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 16.2px;
+  letter-spacing: 0;
+  color: #fff;
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .content__video-card-thumbnail {
