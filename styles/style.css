@@ -147,7 +147,7 @@ input {
   letter-spacing: 0;
 }
 
-.search-form__textfield::focus {
+.search-form__textfield:focus {
   outline: none;
 }
 
@@ -226,7 +226,7 @@ input {
 
 .content__details {
   max-width: 399px;
-  height: 534px;
+  min-height: 534px;
 }
 
 .title {
@@ -250,7 +250,7 @@ input {
   flex-flow: column nowrap;
   gap: 30px 0;
   max-height: 298px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .content__list {
@@ -260,7 +260,7 @@ input {
 }
 
 .content__list-item {
-  padding: 0 3px 0 2px;
+  padding: 0 3.5px 0 3px;
 }
 
 .content__card-link {
@@ -269,16 +269,16 @@ input {
   text-decoration: none;
 }
 
-.content__card-link:hover >.content__video-card > .content__video-card-description-container > .content__video-card-title {
+.content__card-link:hover .content__video-card-title {
   text-decoration: underline;
   text-decoration-thickness: 1.5px;
   text-underline-offset: 4px;
 }
 
-.content__card-link:hover >.content__video-card > .content__video-card-description-container > .content__video-card-description {
+.content__card-link:hover .content__video-card-description {
   text-decoration: underline;
   text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
+  text-underline-offset: 1px;
 }
 
 .content__card-link:active {
@@ -328,10 +328,9 @@ input {
 
 .content__video-card-description {
   display: -webkit-box;
-  padding-bottom: 6px;
   overflow: hidden;
   color: #fff;
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
